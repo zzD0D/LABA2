@@ -1,0 +1,95 @@
+№1)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int f(int v1, int v2, int t){
+int s = v1*t+v2*t;
+return s;
+}
+int main(){
+int v1=40;
+int v2=60;
+int t=2;
+cout << f(v1,v2,t);
+return 0;
+}
+
+№2)
+#include <iostream>
+#include <cmath>
+using namespace std;
+bool f(int a){
+return a/100 == 2||0;
+}
+int main(){
+int a;
+cout << "vvedite a:";
+cin >> a;
+if (a>99&&a<=999){
+    cout << f(a);
+
+}
+else{
+    cout << "false";
+}
+return 0;
+}
+
+№3)
+#include <iostream>
+using namespace std;
+
+int main() {
+int a;
+cout << "vvedite chislo:" << a;
+cin >> a;
+if (a % 2 == 0)
+{
+    cout << "eto chetnoe chislo \n";
+}
+else
+{
+    cout << "eto nechetnoe chislo \n";
+}
+}
+№4)
+#include <iostream>
+#include <cmath>
+using namespace std;
+double f(double x, double y){
+double num = (pow(2*x,3)+1)/sqrt(x)+pow(x,sqrt(y));
+return num;
+}
+int main()
+{
+    double x;
+   cout<<"Vvedite x:";
+   cin>>x;
+      double y;
+   cout<<"Vvedite y:";
+   cin>>y;
+   double a = f(x,y);
+   cout<<"Otvet: "<<a;
+   return 0;
+}
+№5)
+#include <iostream>
+#include <cmath>
+#define PI 3.14
+#define E 2.71
+using namespace std;
+double f(double x)
+{
+double num = pow(x,2);
+double denum = pow(cos(x),2)+pow(sin(x),2);
+return num/denum;
+}
+int main()
+{
+    double x;
+   cout<<"Vvedite x:";
+   cin>>x;
+   double a = f(x);
+   cout<<"Otvet: "<<a;
+   return 0;
+}
